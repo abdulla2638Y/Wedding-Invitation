@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wedding Invitation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="music">
+  <button id="musicBtn" aria-label="Toggle music">♫</button>
+  <audio id="music" loop src="assets/music.mp3"></audio>
+</div>
+
+<header class="hero">
+  <div class="ornament">❦</div>
+  <p class="small">TOGETHER WITH THEIR FAMILIES</p>
+  <h1>Wedding<br><span>Invitation</span></h1>
+  <div class="divider">✦</div>
+  <p class="invite">We invite you to celebrate the beginning of a beautiful journey.</p>
+  <button class="openBtn" onclick="document.getElementById('story').scrollIntoView({behavior:'smooth'})">Open Invitation</button>
+</header>
+
+<section id="story" class="section couple">
+  <p class="eyebrow">THE COUPLE</p>
+  <h2>Two Hearts, One Journey</h2>
+  <div class="names">
+    <span>Bride</span>
+    <strong>Aliza</strong>
+    <i>&</i>
+    <span>Groom</span>
+    <strong>Salman</strong>
+  </div>
+  <p>With the blessings of our families, we are delighted to invite you to share our special day and make it memorable with your presence.</p>
+</section>
+
+<section class="photo-section">
+  <div class="photo-frame">
+    <img src="assets/couple.jpeg" alt="Couple photo">
+  </div>
+</section>
+
+<section class="section date">
+  <p class="eyebrow">SAVE THE DATE</p>
+  <h2>25 September 2026</h2>
+  <p class="location">Shalimaar Garden, Prayagraj</p>
+  <div id="countdown" class="countdown">
+    <div><b id="days">00</b><span>Days</span></div>
+    <div><b id="hours">00</b><span>Hours</span></div>
+    <div><b id="minutes">00</b><span>Minutes</span></div>
+    <div><b id="seconds">00</b><span>Seconds</span></div>
+  </div>
+</section>
+
+<section class="section events">
+  <p class="eyebrow">THE CELEBRATIONS</p>
+
+  <div class="single-event">
+      <h3>Wedding</h3>
+
+      <div class="event-line"></div>
+
+      <p>15 September 2026 · 9:00 PM</p>
+      <p>Shalimar Garden</p>
+  </div>
+</section>
+
+<section class="section gallery">
+  <p class="eyebrow">THE BEGINNING</p>
+  <h2>A Glimpse Before Forever</h2>
+  <div class="grid">
+    <img src="assets/photo1.jpeg" alt="">
+    <img src="assets/photo2.jpeg" alt="">
+    <img src="assets/photo3.jpeg" alt="">
+    <img src="assets/photo4.jpeg" alt="">
+  </div>
+</section>
+
+<section class="section venue">
+  <p class="eyebrow">JOIN US</p>
+  <h2>Wedding Venue</h2>
+  <p>Shalimaar<br>60 Feet Rd, Ghaus Nagar,
+    Kareli, Prayagraj, U.P. 211016</p>
+  <a class="mapBtn" href="https://maps.app.goo.gl/6aT8E49VXgjSo7Q16?g_st=aw" target="_blank">View Location</a>
+</section>
+
+<section class="final">
+  <div class="ornament">❦</div>
+  <p class="small">YOUR PRESENCE IS OUR GREATEST GIFT</p>
+  <h2>We Await<br><span>Your Presence</span></h2>
+  <p>With love and warm regards,<br><b>Aliza & Salman</b></p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

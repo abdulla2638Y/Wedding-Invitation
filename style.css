@@ -1,0 +1,118 @@
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--cream:#f8f1e5;--ink:#34251f;--gold:#9c7950;--soft:#efe1ce}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--ink);font-family:"Cormorant Garamond",serif;line-height:1.5}
+section,header{min-height:100vh}
+.hero{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px 24px;background:radial-gradient(circle at top,#fffaf1 0,#f8f1e5 55%,#eadbc6 100%);position:relative;overflow:hidden}
+.hero:before,.final:before{content:"";position:absolute;inset:20px;border:1px solid rgba(156,121,80,.35);pointer-events:none}
+.ornament{font-size:42px;color:var(--gold);margin-bottom:18px}
+.small,.eyebrow{letter-spacing:4px;font-size:11px;text-transform:uppercase;color:#856846}
+h1{font-size:64px;font-weight:500;line-height:.9;margin:10px 0 24px}
+h1 span,h2 span{font-family:"Great Vibes",cursive;color:var(--gold)}
+.divider{color:var(--gold);font-size:20px;margin:8px}
+.invite{max-width:300px;font-size:19px;margin:10px auto 28px}
+button,.mapBtn{border:1px solid var(--gold);background:transparent;color:var(--ink);padding:13px 24px;border-radius:30px;font-family:inherit;font-size:16px;text-decoration:none;display:inline-block;cursor:pointer}
+.openBtn{background:var(--ink);color:#fff}
+.section{padding:80px 24px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}
+h2{font-size:44px;font-weight:500;line-height:1.05;margin:10px 0 26px}
+.couple>p:last-child{max-width:520px;font-size:19px}
+.names{display:flex;flex-direction:column;align-items:center;margin:18px 0 28px}
+.names span{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#8b6a47}
+.names strong{font-family:"Great Vibes",cursive;font-size:54px;font-weight:400;color:var(--gold);line-height:1}
+.names i{font-size:30px;color:#6d5746;margin:7px}
+.photo-section{min-height:75vh;padding:40px 28px;display:flex;justify-content:center;align-items:center}
+.photo-frame{width:min(440px,88vw);padding:10px;border:1px solid var(--gold);background:#fff}
+.photo-frame img{width:100%;height:520px;object-fit:cover;display:block}
+.date{background:#efe2d0}
+.location{font-size:19px;margin-top:-15px}
+.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;width:100%;max-width:520px;margin-top:35px}
+.countdown div{padding:14px 5px;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold)}
+.countdown b{display:block;font-size:28px;font-weight:500}.countdown span{font-size:11px;text-transform:uppercase;letter-spacing:1px}
+.events{align-items:stretch;text-align:left;max-width:800px;margin:auto}
+.events .eyebrow,.events h2{align-self:center;text-align:center}
+.event{display:flex;gap:18px;padding:25px 0;border-bottom:1px solid rgba(156,121,80,.35)}
+.event-icon{font-size:28px;color:var(--gold);width:35px;text-align:center}.event h3{font-size:27px;font-weight:600}.event p{font-size:17px}
+.gallery .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;width:min(600px,100%)}
+.grid img{width:100%;height:210px;object-fit:cover;border:1px solid #d5bea0;padding:4px}
+.venue{background:#eee0ce}.mapBtn{margin-top:22px;background:var(--ink);color:#fff}
+.final{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px;position:relative;background:#34251f;color:#f8f1e5}
+.final .small{color:#d8bd9a}.final h2{font-size:56px}.final p:last-child{font-size:20px;margin-top:25px}.music{position:fixed;z-index:10;right:16px;top:16px}.music button{width:44px;height:44px;padding:0;background:rgba(248,241,229,.9)}
+@media(max-width:420px){h1{font-size:56px}h2{font-size:39px}.photo-frame img{height:440px}.countdown b{font-size:23px}.countdown span{font-size:9px}}
+.single-event {
+    width: min(600px, 90%);
+    text-align: center;
+    margin-top: 10px;
+    padding: 30px 20px;
+  }
+  
+  .single-event h3 {
+    font-size: 38px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: var(--ink);
+  }
+  
+  .event-line {
+    width: 70px;
+    height: 1px;
+    background: var(--gold);
+    margin: 0 auto 18px;
+  }
+  
+  .single-event p {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  .single-event {
+    width: min(600px, 90%);
+    text-align: center;
+    margin-top: 10px;
+    padding: 30px 20px;
+  }
+  
+  .single-event h3 {
+    font-size: 38px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: var(--ink);
+  }
+  
+  .event-line {
+    width: 70px;
+    height: 1px;
+    background: var(--gold);
+    margin: 0 auto 18px;
+  }
+  
+  .single-event p {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  /* Wedding Event - Final Fix */
+.single-event {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 20px 10px 0;
+    display: block;
+}
+
+.single-event h3 {
+    font-size: 42px;
+    font-weight: 500;
+    margin: 0 0 12px 0;
+    line-height: 1.2;
+}
+
+.single-event .event-line {
+    width: 65px;
+    height: 1px;
+    margin: 0 auto 15px auto;
+    background: var(--gold);
+}
+
+.single-event p {
+    font-size: 18px;
+    margin: 5px 0;
+    line-height: 1.4;
+}
